@@ -30,6 +30,13 @@
 	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
 	<script type="text/javascript" src="engine0/jquery.js"></script>
 	<!-- End WOWSlider.com HEAD section -->
+	<script>
+ $('a[href*="pdf"]').click(function(e) {
+     e.preventDefault(); // stop the existing link from firing
+     var documentUrl = $(this).attr("href"); // get the url of the pdf
+     window.open(documentUrl, '_blank'); // open the pdf in a new window/tab
+   });
+ </script>
 	</head>
     
     <body>
